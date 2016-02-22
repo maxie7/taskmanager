@@ -7,7 +7,7 @@
     <tr>
       <th>Title</th>
       <th>Description</th>
-      <th colspan="3"></th>
+      <!-- <th colspan="3"></th> -->
     </tr>
   </thead>
 
@@ -16,10 +16,10 @@
       <tr id="<%= dom_id(todo_list) %>">
         <td><%= todo_list.title %></td>
         <td><%= todo_list.description %></td>
-          <%= link_to "List Items", todo_list_todo_items_path(todo_list) %>
+        <td><%= link_to "List Items", todo_list_todo_items_path(todo_list) %>
           <%= link_to 'Show', todo_list %>
           <%= link_to 'Edit', edit_todo_list_path(todo_list) %>
-          <%= link_to 'Destroy', todo_list, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Destroy', todo_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
