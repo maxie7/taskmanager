@@ -5,14 +5,14 @@ class TodoItemsController < ApplicationController
   end
 
   def new
-  	@todo_item = @todo_list.todo_items.new  	
+  	@todo_item = @todo_list.todo_items.new
   end
 
   def create
   	@todo_item = @todo_list.todo_items.new(todo_item_params)
   	if @todo_item.save
   	  flash[:success] = "Added project task." 
-  	  redirect_to todo_list_todo_items_path
+  	  redirect_to @todo_list
   	else
   	  flash[:error] = "There was a problem adding that project task."
   	  render action: :new
@@ -21,13 +21,14 @@ class TodoItemsController < ApplicationController
 
   def edit
     @todo_item = @todo_list.todo_items.find(params[:id])
+   
   end
 
   def update
     @todo_item = @todo_list.todo_items.find(params[:id])
     if @todo_item.update_attributes(todo_item_params)
       flash[:success] = "Saved project task."
-      redirect_to todo_list_todo_items_path
+      redirect_to @todo_list
     else
       flash[:error] = "That task could not be saved."
       render action: :edit
@@ -41,13 +42,13 @@ class TodoItemsController < ApplicationController
     else
       flash[:error] = "Project task could not be deleted."
     end
-    redirect_to todo_list_todo_items_path
+    redirect_to @todo_list
   end
 
   def complete
     @todo_item = @todo_list.todo_items.find(params[:id])
     @todo_item.update_attribute(:completed_at, Time.now)
-    redirect_to todo_list_todo_items_path, notice: "Task marked as complete."
+    redirect_to @todo_list, notice: "Task marked as complete."
   end
 
   def url_options
