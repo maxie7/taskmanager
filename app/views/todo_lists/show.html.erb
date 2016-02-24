@@ -1,6 +1,6 @@
-<h1><%= @todo_list.title %></h1>
+<h1 class="todo_list_title"><%= @todo_list.title %></h1>
 
-<h2><%= @todo_list.description %></h2>
+<h2 class="todo_list_sub_title"><%= @todo_list.description %></h2>
 
 <% if @todo_list.has_incompleted_items? %>
 <h3>Incomplete Items:</h3>
@@ -23,5 +23,8 @@
 </ul>
 <% end %>
 
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+<div class="links">
+  <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+  <%= link_to 'Back', todo_lists_path %>
+
+</div>
