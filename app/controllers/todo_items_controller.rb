@@ -11,10 +11,10 @@ class TodoItemsController < ApplicationController
   def create
   	@todo_item = @todo_list.todo_items.new(todo_item_params)
   	if @todo_item.save
-  	  flash[:success] = "Added todo list item." 
+  	  flash[:success] = "Added project task." 
   	  redirect_to todo_list_todo_items_path
   	else
-  	  flash[:error] = "There was a problem adding that todo list item."
+  	  flash[:error] = "There was a problem adding that project task."
   	  render action: :new
   	end
   end
@@ -26,10 +26,10 @@ class TodoItemsController < ApplicationController
   def update
     @todo_item = @todo_list.todo_items.find(params[:id])
     if @todo_item.update_attributes(todo_item_params)
-      flash[:success] = "Saved todo list item."
+      flash[:success] = "Saved project task."
       redirect_to todo_list_todo_items_path
     else
-      flash[:error] = "That todo item could not be saved."
+      flash[:error] = "That task could not be saved."
       render action: :edit
     end
   end
@@ -37,9 +37,9 @@ class TodoItemsController < ApplicationController
   def destroy
     @todo_item = @todo_list.todo_items.find(params[:id])
     if @todo_item.destroy
-      flash[:success] = "Todo list item was deleted"
+      flash[:success] = "Project task was deleted"
     else
-      flash[:error] = "Todo list item could not be deleted."
+      flash[:error] = "Project task could not be deleted."
     end
     redirect_to todo_list_todo_items_path
   end
@@ -47,7 +47,7 @@ class TodoItemsController < ApplicationController
   def complete
     @todo_item = @todo_list.todo_items.find(params[:id])
     @todo_item.update_attribute(:completed_at, Time.now)
-    redirect_to todo_list_todo_items_path, notice: "Todo item marked as complete."
+    redirect_to todo_list_todo_items_path, notice: "Task marked as complete."
   end
 
   def url_options
