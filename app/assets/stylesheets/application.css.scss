@@ -54,11 +54,11 @@ body {
 .container {
 	width: 50%;
 	max-width: 750px;
-	background: $white_opaque;
+	// background: $white_opaque;
 	margin: 3em auto 0 auto;
 	border-radius: 15px;
-	-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
-	box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+	// -webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
+	// box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
 	padding: 1em 0;
 }
 
@@ -71,7 +71,7 @@ body {
 	margin: 0;
 	a {
 		text-decoration: none;
-		color: #330000;
+		color: #660033;
 		transition: all .4s ease-in-out;
 		&:hover {
 			opacity: 0.4;
@@ -84,7 +84,7 @@ body {
 	margin: 0 0 3em 0;
 	text-align: center;
 	font-size: 1.1em;
-	color: #330000;
+	color: #660033;
 	font-weight: 300;
 }
 
@@ -114,24 +114,26 @@ body {
 }
 
 .index_row {
-	padding: 2em;
+	background: rgba(102, 0, 51, .1);
+	padding: 1.9em;
 	border-radius: 15px;
-	border: 5px solid rgba(250,250,250, .3);
+	border: 5px solid rgba(102, 0, 51, .6);
+	margin: 8px;
 	.todo_list_sub_title {
-		margin-bottom: 0;
+		margin: 4px;
 	}
 }
 
 #todo_items_wrapper {
 	.row {
 		width: 100%;
-		border-top: 1px solid rgba(250,250,250, .3);
-		border-bottom: 1px solid rgba(250,250,250, .3);
+		border-top: 1px solid rgba(102, 0, 51, .6);
+		border-bottom: 1px solid rgba(102, 0, 51, .6);
 		.complete {
 			width: 10%;
 			float: left;
 			text-align: center;
-			border-right: 1px solid rgba(250,250,250, .3);
+			border-right: 1px solid rgba(102, 0, 51, .6);
 			padding: 1em 0;
 		}
 		.todo_item {
@@ -148,14 +150,14 @@ body {
 			width: 10%;
 			float: left;
 			text-align: center;
-			border-left: 1px solid rgba(250,250,250, .3);
+			border-left: 1px solid rgba(102, 0, 51, .6);
 			padding: 1em 0;
 		}
 		.trash {
 			width: 10%;
 			float: left;
 			text-align: center;
-			border-left: 1px solid rgba(250,250,250, .3);
+			border-left: 1px solid rgba(102, 0, 51, .6);
 			padding: 1em 0;
 		}
 		i {
@@ -206,6 +208,7 @@ body {
 	color: #2c1994;
 	a {
 		color: #2c1994;
+		text-decoration: none;
 	}
 }
 
