@@ -127,8 +127,8 @@ body {
 #todo_items_wrapper {
 	.row {
 		width: 100%;
-		border-top: 1px solid rgba(102, 0, 51, .6);
-		border-bottom: 1px solid rgba(102, 0, 51, .6);
+		border: 1px solid rgba(102, 0, 51, .6);
+		// border-bottom: 1px solid rgba(102, 0, 51, .6);
 		.complete {
 			width: 10%;
 			float: left;
