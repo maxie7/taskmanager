@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'ranked-model'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'jquery-turbolinks'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 

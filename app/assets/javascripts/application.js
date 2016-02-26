@@ -11,10 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery-ui/sortable
+//= require sort
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require sort
 //= require_tree .
 
