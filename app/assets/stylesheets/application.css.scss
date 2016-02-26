@@ -125,8 +125,8 @@ body {
 	}
 }
 #todo_item_deadline{
-	width: 17%;
-	margin: .5em 2% 1em .5em;
+	width: 20%;
+	margin: .3em 2% 1em .3em;
 	display: inline-block;
 	outline: none;
 	background: rgba(250,250,250,.4);
@@ -191,7 +191,7 @@ body {
 		margin-top: 2em;
 		padding: 0 5%;
 		input[type="text"] {
-			width: 57%;
+			width: 63%;
 			margin-right: 2%;
 			display: inline-block;
 			outline: none;
@@ -218,7 +218,7 @@ body {
 			border: none;
 			height: 40px;
 			border-radius: 4px;
-			width: 15%;
+			width: 10%;
 			display: inline-block;
 			transition: all .4s ease-in-out;
 			cursor: pointer;
@@ -268,7 +268,7 @@ input[type="submit"] {
 	border: none;
 	height: 40px;
 	border-radius: 4px;
-	width: 12%;
+	width: 10%;
 	display: inline-block;
 	transition: all .4s ease-in-out;
 	cursor: pointer;
