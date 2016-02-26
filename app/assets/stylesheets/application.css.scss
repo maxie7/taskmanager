@@ -142,14 +142,14 @@ body {
 		border: 1px solid rgba(102, 0, 51, .6);
 		// border-bottom: 1px solid rgba(102, 0, 51, .6);
 		.complete {
-			width: 10%;
+			width: 5%;
 			float: left;
 			text-align: center;
 			border-right: 1px solid rgba(102, 0, 51, .6);
 			padding: 1em 0;
 		}
 		.todo_item {
-			width: 75%;
+			width: 60%;
 			float: left;
 			p {
 				margin: 0;
@@ -157,6 +157,17 @@ body {
 				color: $dark;
 				font-weight: 100;
 			}
+		}
+		.deadline {
+			width: 20%;
+			float: left;
+			p {
+				margin: 0;
+				padding: 1em;
+				color: $dark;
+				font-weight: 100;
+			}
+			text-align: center;
 		}
 		.sorting {
 			width: 5%;
