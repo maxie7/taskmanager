@@ -124,7 +124,18 @@ body {
 		margin: 4px;
 	}
 }
+#todo_item_deadline{
+	width: 17%;
+	margin: .5em 2% 1em .5em;
+	display: inline-block;
+	outline: none;
+	background: rgba(250,250,250,.4);
+	border: none;
+	height: 40px;
+	border-radius: 4px;
+	padding: 0.8em 0.8em;
 
+}
 #todo_items_wrapper {
 	.row {
 		width: 100%;
@@ -190,17 +201,17 @@ body {
 			border-radius: 4px;
 			padding: 1em 2em;
 		}
-		input[type="date"], textarea {
-			width: 17%;
-			margin: .5em 2% 1em .5em;
-			display: inline-block;
-			outline: none;
-			background: rgba(250,250,250,.4);
-			border: none;
-			height: 40px;
-			border-radius: 4px;
-			padding: 0.8em 0.8em;
-        } 
+		// input[type="date"], textarea {
+		// 	width: 17%;
+		// 	margin: .5em 2% 1em .5em;
+		// 	display: inline-block;
+		// 	outline: none;
+		// 	background: rgba(250,250,250,.4);
+		// 	border: none;
+		// 	height: 40px;
+		// 	border-radius: 4px;
+		// 	padding: 0.8em 0.8em;
+  //       } 
 		input[type="submit"] {
 			background: rgba(250,250,250,.4);
 			outline: none;
@@ -238,7 +249,7 @@ label {
 	color: $dark;
 }
 input[type="text"], textarea {
-	width: 57%;
+	width: 63%;
 	margin: .5em 2% 1em .5em;
 	display: inline-block;
 	outline: none;
@@ -257,7 +268,7 @@ input[type="submit"] {
 	border: none;
 	height: 40px;
 	border-radius: 4px;
-	width: 15%;
+	width: 12%;
 	display: inline-block;
 	transition: all .4s ease-in-out;
 	cursor: pointer;
