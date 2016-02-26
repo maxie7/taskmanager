@@ -10,7 +10,14 @@
     </div>
 
     <div class="deadline">
-      <p style="opacity: 0.4;"><strike><%= todo_item.deadline %></strike></p>
+      <p style="opacity: 0.4;">
+      <strike>
+      <% if todo_item.deadline.present? %>
+        <%= todo_item.deadline.strftime('%d-%m-%Y') %>
+      <% else %>
+         no deadline
+      <% end %>
+      </strike></p>
     </div>
 
     <div class="sorting">
@@ -39,7 +46,13 @@
     </div>
 
     <div class="deadline">
-      <p><%= todo_item.deadline %></p>
+      <p>
+        <% if todo_item.deadline.present? %>
+          <%= todo_item.deadline.strftime('%d-%m-%Y') %>
+        <% else %>
+          no deadline
+        <% end %>
+      </p>
     </div>
 
     <div class="sorting">
