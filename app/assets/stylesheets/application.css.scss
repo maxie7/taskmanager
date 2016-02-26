@@ -138,7 +138,7 @@ body {
 			padding: 1em 0;
 		}
 		.todo_item {
-			width: 70%;
+			width: 75%;
 			float: left;
 			p {
 				margin: 0;
@@ -147,15 +147,22 @@ body {
 				font-weight: 100;
 			}
 		}
+		.sorting {
+			width: 5%;
+			float: left;
+			text-align: center;
+			border-left: 1px solid rgba(102, 0, 51, .6);
+			padding: 1em 0;
+		}
 		.edit {
-			width: 10%;
+			width: 5%;
 			float: left;
 			text-align: center;
 			border-left: 1px solid rgba(102, 0, 51, .6);
 			padding: 1em 0;
 		}
 		.trash {
-			width: 10%;
+			width: 5%;
 			float: left;
 			text-align: center;
 			border-left: 1px solid rgba(102, 0, 51, .6);

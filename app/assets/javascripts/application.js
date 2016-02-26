@@ -15,9 +15,6 @@
 //= require jquery-ui/sortable
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require sort
 //= require_tree .
 
-$(function() {
-    $( ".sortable" ).sortable();
-    $( ".sortable" ).disableSelection();
-  });
