@@ -26,7 +26,7 @@ html {
 }
 
 body {
- 	height: 100%;
+  height: 100%;
   background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
   background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
   background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
@@ -305,24 +305,25 @@ div.flash.notice  { border: 2px solid blue;  color: blue;  }
 .clear { clear: both; }
 
 div.nav {
-	border-bottom: 1px solid #aaa;
-	margin-bottom: 20px;
-	padding: 10px 0 0 5px;
+	// border-bottom: 1px solid #2c1994;
+	float: right;
+	// margin: 2px;
+	// padding: 2px 2px 2px 2px;
 }
-div.nav h1 {
-	float: left;
-	margin: 0 1em 0 0;
+div.nav h5 {
+	float: right;
+	// margin: 2px 2px 2px 2px;
 }
 div.nav a { text-decoration: none !important; }
 div.nav ul {
-	float: left;
+	float: right;
 	list-style: none;
 	clear: right;
 	margin: 0 0 0 1em;
 	padding: 0;
 }
 div.nav ul li {
-	float: left;
+	float: right;
 }
 div.nav ul li a {
 	display: block;
