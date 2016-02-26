@@ -2,7 +2,7 @@
   <% if todo_item.completed? %>
     <div class="complete">
       <%= link_to complete_todo_list_todo_item_path(@todo_list, todo_item.id), method: :patch do %>
-        <i style="opacity: 0.4;" class="fa fa-check"></i>
+        <i style="opacity: 0.4;" class="fa fa-check-square"></i>
       <% end %>
     </div>
     <div class="todo_item">
@@ -21,7 +21,7 @@
     </div>
 
     <div class="sorting">
-        <i class="fa fa-arrows-v"></i>
+        <i class="fa fa-sort"></i>
     </div>
 
     <div class="edit">
@@ -38,7 +38,7 @@
   <% else %>
     <div class="complete">
       <%= link_to complete_todo_list_todo_item_path(@todo_list, todo_item.id), method: :patch do %>
-        <i class="fa fa-check"></i>
+        <i class="fa fa-square"></i>
       <% end %>
     </div>
     <div class="todo_item">
@@ -56,7 +56,7 @@
     </div>
 
     <div class="sorting">
-        <i class="fa fa-arrows-v"></i>
+        <i class="fa fa-sort"></i>
     </div>
 
     <div class="edit">
