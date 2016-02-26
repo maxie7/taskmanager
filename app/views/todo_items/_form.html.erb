@@ -1,4 +1,5 @@
 <%= form_for([@todo_list, @todo_list.todo_items.build]) do |f| %>
   <%= f.text_field :content, placeholder: "New Task" %>
+  <%= f.date_field :deadline, placeholder: "Deadline" %>
   <%= f.submit "Add Task" %>
 <% end %>
