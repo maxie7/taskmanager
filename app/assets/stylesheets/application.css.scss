@@ -140,6 +140,7 @@ body {
 	.row {
 		width: 100%;
 		border: 1px solid rgba(102, 0, 51, .6);
+		background: rgba(102, 0, 51, .1);
 		// border-bottom: 1px solid rgba(102, 0, 51, .6);
 		.complete {
 			width: 5%;
@@ -155,7 +156,7 @@ body {
 				margin: 0;
 				padding: 1em;
 				color: $dark;
-				font-weight: 100;
+				font-weight: 200;
 			}
 		}
 		.deadline {
@@ -165,7 +166,7 @@ body {
 				margin: 0;
 				padding: 1em;
 				color: $dark;
-				font-weight: 100;
+				font-weight: 200;
 			}
 			text-align: center;
 		}
