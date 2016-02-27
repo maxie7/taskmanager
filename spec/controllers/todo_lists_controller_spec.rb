@@ -33,6 +33,7 @@ describe TodoListsController do
   describe "GET index" do
     it "assigns all todo_lists as @todo_lists" do
       todo_list = TodoList.create! valid_attributes
+      controller.stub(:require_user).and_return(true)
       get :index, {}, valid_session
       assigns(:todo_lists).should eq([todo_list])
     end

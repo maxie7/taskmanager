@@ -22,6 +22,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'byebug'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 group :test do
