@@ -1,0 +1,16 @@
+<h1 class="todo_list_title">Log In</h1>
+<%= form_tag user_sessions_path do %>
+  
+  <div class="forms">
+      <%= label_tag :email, "Email address" %><br>
+      <%= text_field_tag :email %>
+  </div>
+  <div class="forms">
+      <%= label_tag :password, "Password" %><br>
+      <%= password_field_tag :password %>
+  </div>
+  
+  <div class="links">
+    <%= submit_tag "Log In" %>
+  </div>
+<% end %>

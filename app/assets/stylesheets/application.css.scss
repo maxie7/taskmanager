@@ -246,7 +246,7 @@ header{
 
 .links {
 	display: block;
-	margin: 1.5em auto 0 auto;
+	margin: 0.3em auto 0 auto;
 	text-align: center;
 	font-size: 1.2em;
 	color: #2c1994;
@@ -258,6 +258,7 @@ header{
 
 .forms {
 	padding: 0 5%;
+	text-align: center;
 }
 label {
 	color: $dark;
