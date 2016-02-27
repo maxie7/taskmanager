@@ -26,13 +26,13 @@ html {
 }
 
 body {
-  height: 100%;
-  background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  font-family: 'Lato', sans-serif;
+    height: 90%;
+	background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	font-family: 'Lato', sans-serif;
 }
 
 .clearfix:before,
@@ -62,31 +62,33 @@ body {
 	// box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
 	padding: 1em 0;
 }
-
-.main_title {
-    text-align: center;
-	font-weight: 700;
-	font-size: 2em;
-	text-transform: uppercase;
-	color: #2c1994;
-	margin: 0;
-	a {
-		text-decoration: none;
-		color: #660033;
-		transition: all .4s ease-in-out;
-		&:hover {
-			opacity: 0.4;
+header{
+	clear: right;
+	.main_title {
+	    text-align: center;
+		font-weight: 700;
+		font-size: 2em;
+		text-transform: uppercase;
+		color: #2c1994;
+		margin: 0;
+		a {
+			text-decoration: none;
+			color: #660033;
+			transition: all .4s ease-in-out;
+			&:hover {
+				opacity: 0.4;
+			}
 		}
+
 	}
 
-}
-
-.main_sub_title {
-	margin: 0 0 3em 0;
-	text-align: center;
-	font-size: 1.1em;
-	color: #660033;
-	font-weight: 300;
+	.main_sub_title {
+		margin: 0 0 3em 0;
+		text-align: center;
+		font-size: 1.1em;
+		color: #660033;
+		font-weight: 300;
+	}
 }
 
 .todo_list_title {
@@ -302,13 +304,13 @@ div.flash.success { border: 2px solid green; color: green; }
 div.flash.error   { border: 2px solid red;   color: red;   }
 div.flash.notice  { border: 2px solid blue;  color: blue;  }
 
-.clear { clear: both; }
+// .clear { clear: both; }
 
 div.nav {
 	// border-bottom: 1px solid #2c1994;
 	float: right;
-	// margin: 2px;
-	// padding: 2px 2px 2px 2px;
+	margin: 2px;
+	padding: 2px 2px 2px 2px;
 }
 div.nav h5 {
 	float: right;
@@ -327,14 +329,17 @@ div.nav ul li {
 }
 div.nav ul li a {
 	display: block;
+	margin: 0 0 0 0.4em;
+	border-radius: 10px;
+	border:solid 1px #7495a3;
 	width: auto;
 	padding: 8px 10px 8px 10px;
-	background: #eee;
-	color: #aaa;
+	background: #3ba4c7;
+	color: #660033;
 }
 div.nav ul li a:hover {
-	background: #aaa;
-	color: #eee;
+	background: #660033;
+	color: #3ba4c7;
 }
 
 // for the button on main page

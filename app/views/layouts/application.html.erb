@@ -10,17 +10,18 @@
 
 </head>
 <body>
+
   <div class="nav">
-    <h5><%= link_to "Task Manager ver. 1.01", root_path %></h5>
     <ul>
-      <li><%= link_to "BlaBla", root_path %></li>
+      <li><a href="https://github.com/maxie7/taskmanager">About</a></li>
       <li><%= link_to "Sign Up", new_user_path %></li>
     </ul>
   </div>
-  <!-- <div>
+
+  <header>
     <h1 class="main_title"><%= link_to 'SIMPLE TODO LISTS', root_path %></h1>
     <h2 class="main_sub_title">for RubyGarage</h2>
-  </div> -->
+  </header>
 
   <div class="container sortable">
     <%= yield %>
