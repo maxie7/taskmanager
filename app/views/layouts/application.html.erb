@@ -14,7 +14,12 @@
   <div class="nav">
     <ul>
       <li><a href="https://github.com/maxie7/taskmanager">About</a></li>
-      <li><%= link_to "Sign Up", new_user_path %></li>
+      <% if logged_in? %>
+        <li><%= link_to "Log Out", logout_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Sign Up", new_user_path %></li>
+        <li><%= link_to "Log in", new_user_session_path %></li>
+      <% end %>
     </ul>
   </div>
 
