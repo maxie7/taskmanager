@@ -1,7 +1,9 @@
 class TodoItemsController < ApplicationController
+  before_action :require_user
   before_action :find_todo_list
+  
   def index
-  	
+
   end
 
   def new
@@ -27,10 +29,10 @@ class TodoItemsController < ApplicationController
   def update
     @todo_item = @todo_list.todo_items.find(params[:id])
     if @todo_item.update_attributes(todo_item_params)
-      flash[:success] = "Saved project task."
+      flash[:success] = "The Task Saved"
       redirect_to @todo_list
     else
-      flash[:error] = "That task could not be saved."
+      flash[:error] = "That task could not be saved"
       render action: :edit
     end
   end
@@ -38,9 +40,9 @@ class TodoItemsController < ApplicationController
   def destroy
     @todo_item = @todo_list.todo_items.find(params[:id])
     if @todo_item.destroy
-      flash[:success] = "Project task was deleted"
+      flash[:success] = "The task was deleted"
     else
-      flash[:error] = "Project task could not be deleted."
+      flash[:error] = "The task could not be deleted"
     end
     redirect_to @todo_list
   end
@@ -48,7 +50,7 @@ class TodoItemsController < ApplicationController
   def complete
     @todo_item = @todo_list.todo_items.find(params[:id])
     @todo_item.update_attribute(:completed_at, Time.now)
-    redirect_to @todo_list, notice: "Task marked as complete."
+    redirect_to @todo_list, notice: "The task completed"
   end
 
   def url_options
@@ -58,7 +60,7 @@ class TodoItemsController < ApplicationController
   private
 
   def find_todo_list
-    @todo_list = TodoList.find(params[:todo_list_id])
+    @todo_list = current_user.todo_lists.find(params[:todo_list_id])
   end
 
   def todo_item_params

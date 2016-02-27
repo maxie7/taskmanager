@@ -1,0 +1,10 @@
+<h1 class="todo_list_title">Reset Your Password</h1>
+<%= form_tag password_resets_path do %>
+  <div class="field">
+    <%= label_tag "Email" %>
+    <%= text_field_tag :email %><br>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Reset Password" %>
+  </div>
+<% end %>
