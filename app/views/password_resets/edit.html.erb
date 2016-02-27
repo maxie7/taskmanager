@@ -1,0 +1,14 @@
+<h1 class="todo_list_title">Change Your Password</h1>
+<%= form_for @user, url: password_reset_path(@user.password_reset_token), html: { method: :patch } do |form| %>
+  <div class="forms">
+	<%= form.label :password %><br>
+	<%= form.password_field :password %>
+  </div>
+  <div class="forms">
+	<%= form.label :password_confirmation, "Password (again)" %><br>
+	<%= form.password_field :password_confirmation %>
+  </div>
+  <div class="links">
+	<%= submit_tag "Change" %>
+  </div>
+<% end %>

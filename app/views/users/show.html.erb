@@ -1,24 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="forms">
   <strong>First name:</strong>
   <%= @user.first_name %>
-</p>
+</div>
 
-<p>
+<div class="forms">
   <strong>Last name:</strong>
   <%= @user.last_name %>
-</p>
+</div>
 
-<p>
+<div class="forms">
   <strong>Email:</strong>
   <%= @user.email %>
-</p>
+</div>
 
 <p>
   <strong>Password digest:</strong>
   <%= @user.password_digest %>
 </p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', todo_lists_path %>
+<div class="links">
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', todo_lists_path %>
+</div>
