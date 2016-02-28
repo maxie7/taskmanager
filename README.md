@@ -16,4 +16,4 @@ by [*Maxym Kosenko*](mailto:maxie7@protonmail.com).
 
 Here what i have:
 
-![Screen1](https://github.com/maxie7/taskmanager/raw/master/http://6.firepic.org/6/images/2016-02/28/bg8c903g0678.png)
+![Screen1](https://github.com/maxie7/taskmanager/raw/master/6.firepic.org/6/images/2016-02/28/bg8c903g0678.png)
