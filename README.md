@@ -4,7 +4,7 @@ This application is for
 [*RubyGarage*](https://rubygarage.com.ua/#about-course/)
 by [*Maxym Kosenko*](mailto:maxie7@protonmail.com).
 
-### Functional requirements:
+### Functional:
 * you can create/update/delete projects
 * you can add tasks to your project(s)
 * you can update & delete tasks
@@ -16,4 +16,4 @@ by [*Maxym Kosenko*](mailto:maxie7@protonmail.com).
 
 Here what i have:
 
-![Screen1](https://github.com/maxie7/taskmanager/raw/master/6.firepic.org/6/images/2016-02/28/bg8c903g0678.png)
+![Screen1](https://github.com/maxie7/taskmanager/raw/master/https://cloud.githubusercontent.com/assets/15796607/13378172/24bfd8d8-de04-11e5-9a03-ebe8957d7bde.png)
